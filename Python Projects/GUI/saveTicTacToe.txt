@@ -1,0 +1,18 @@
+CREATE TABLE TicTacSave
+(
+game_name  varchar(20),
+game_id int,
+player_1 varchar(20),
+player_2 varchar(20),
+pb_1 varchar(1),
+pb_2 varchar(1),
+pb_3 varchar(1),
+pb_4 varchar(1),
+pb_5 varchar(1),
+pb_6 varchar(1),
+pb_7 varchar(1),
+pb_8 varchar(1),
+pb_9 varchar(1)
+ );
+
+ 

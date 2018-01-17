@@ -1,0 +1,15 @@
+
+drop table teldir;
+CREATE TABLE 'teldir' (
+tel_id integer,
+full_name varchar(60),
+nickname varchar(20),
+telephone_no varchar(10),
+landline varchar(15),
+address_short varchar(20),
+address_1 varchar(60),
+address_2 varchar(60),
+city varchar(20),
+zip varchar(10),
+profession varchar(20)
+);

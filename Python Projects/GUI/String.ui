@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>369</width>
+    <height>316</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QRadioButton" name="rb_e">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>21</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Has no e?</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_fob">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>60</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Forbidden?</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lne">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>32</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txe">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>71</y>
+      <width>177</width>
+      <height>139</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_1">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>32</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>71</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_main">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>351</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>369</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionE"/>
+    <addaction name="actionForb"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionE"/>
+   <addaction name="actionForb"/>
+  </widget>
+  <action name="actionE">
+   <property name="icon">
+    <iconset resource="String.qrc">
+     <normaloff>:/icons/e.png</normaloff>:/icons/e.png</iconset>
+   </property>
+   <property name="text">
+    <string>Has no e</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionForb">
+   <property name="icon">
+    <iconset resource="String.qrc">
+     <normaloff>:/icons/forb.png</normaloff>:/icons/forb.png</iconset>
+   </property>
+   <property name="text">
+    <string>Forbidden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionOnly">
+   <property name="text">
+    <string>Uses only</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAll">
+   <property name="text">
+    <string>Uses all</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="String.qrc"/>
+ </resources>
+ <connections/>
+</ui>

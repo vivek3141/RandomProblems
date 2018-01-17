@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>e.png</file>
+    <file>forb.png</file>
+  </qresource>
+</RCC>

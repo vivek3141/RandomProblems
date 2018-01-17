@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>669</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>671</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/movie/movie.jpg);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>669</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionMovies"/>
+    <addaction name="actionCodes"/>
+   </widget>
+   <widget class="QMenu" name="menuTransact">
+    <property name="title">
+     <string>Transact</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuQuery">
+    <property name="title">
+     <string>Query</string>
+    </property>
+    <addaction name="actionlang"/>
+    <addaction name="actionGenre"/>
+    <addaction name="actionFormat"/>
+    <addaction name="actionMov"/>
+   </widget>
+   <addaction name="menuAdd"/>
+   <addaction name="menuTransact"/>
+   <addaction name="menuQuery"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionlang">
+   <property name="text">
+    <string>Languages</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+  </action>
+  <action name="actionGenre">
+   <property name="text">
+    <string>Genre</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionFormat">
+   <property name="text">
+    <string>Format</string>
+   </property>
+  </action>
+  <action name="actionMovies">
+   <property name="text">
+    <string>Movies</string>
+   </property>
+  </action>
+  <action name="actionCodes">
+   <property name="text">
+    <string>Codes</string>
+   </property>
+  </action>
+  <action name="actionMov">
+   <property name="text">
+    <string>Movies - Basic Query</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="movie.qrc"/>
+ </resources>
+ <connections/>
+</ui>
