@@ -3,8 +3,8 @@ zombie = 0
 x = 0
 y = 0
 
-with open("data.txt", "r") as f:
-    field = f.read().split("\n")
+with open("data.txt", "r") as fa:
+    field = fa.read().split("\n")
 
 for i in range(0, len(field), 1):
     for j in range(0, 40, 1):
@@ -47,7 +47,6 @@ def spread(f, xpos, ypos):
     return f
 
 
-# field = spread_right(field, y, x)
 field = spread(field, y, x)
 for i in range(0, len(field), 1):
     print(field[i])
