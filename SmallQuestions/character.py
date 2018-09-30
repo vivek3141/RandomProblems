@@ -39,7 +39,7 @@ class Character:
 
 inventory = [
     "lemon-flavored lemons:food",
-    "apple-flavored lemons:food",
+    "apple-flavored lemons:food03",
     "bbqdude's chicken:food",
     "bisk's magic stew:food",
     "metaclasses:magic",
