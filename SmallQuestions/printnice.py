@@ -16,12 +16,8 @@ def printNice(a, b):
             part2 = str(b * -1)
             sign = " - "
     print(part1 + sign + part2)
-
-
 def main():
     printNice(2, -7)  # sample test code - you can make your own...
     printNice(-1, 9)
     printNice(-14, 0)
-
-
 main()
