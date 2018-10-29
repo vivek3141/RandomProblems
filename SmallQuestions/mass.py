@@ -9,7 +9,7 @@ y1 = [1.548, 1.116, 0.844]
 def plot(x_data, y_data, color):
     x = np.linspace(min(x_data), max(x_data), 100)
     f = interp1d(x_data, y_data, kind="quadratic")
-    plt.plot(x, f(x), color=color, label="$0.68x^2-2.71x+3.51$")
+    plt.plot(x, f(x), color=color, label="y = $0.68x^2-2.71x+3.51$")
 
 
 plt.title("Total Mass vs Acceleration")
