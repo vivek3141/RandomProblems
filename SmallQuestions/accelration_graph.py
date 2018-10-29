@@ -14,7 +14,7 @@ def plot(x1, y1, color):
 
 
 plt.title("Acceleration vs Accelerating Force")
-plt.xlabel("Acceleration $(\\frac{m}{s^2})$")
+plt.xlabel(r"Acceleration $(\frac{m}{s^2})$")
 plt.ylabel("Accelerating Force (N)")
 plt.scatter(x1, y1, color="b")
 plt.plot(x1, y1, color="b", label="y = {}x + {}".format(round(slope,2), round(y1[0] - slope*x1[0], 2)))

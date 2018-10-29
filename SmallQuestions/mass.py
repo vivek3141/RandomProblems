@@ -14,7 +14,7 @@ def plot(x_data, y_data, color):
 
 plt.title("Total Mass vs Acceleration")
 plt.xlabel("Total Mass (kg)")
-plt.ylabel("Acceleration $(\\frac{m}{s^2})$")
+plt.ylabel(r"Acceleration $(\frac{m}{s^2})$")
 plt.scatter(x1, y1, color="r")
 plot(x1, y1,  color="r")
 plt.legend(loc="upper right")
