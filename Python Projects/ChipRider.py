@@ -83,7 +83,7 @@ for i in range(20):
     credits = credits + 1
 print("\n" * 30)
 
-while (True):
+while True:
     print("""Transportation menu
     1.Top up credits
     2.Buy loose credits
