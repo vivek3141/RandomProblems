@@ -1,4 +1,3 @@
-
 """Project ChipRider
 Using Lists and Classes
 Mobile Phone Application
@@ -61,27 +60,30 @@ in the ‘ChipRider’ system is protected if the phone is stolen.
 CONSIDERATIONS:
 1. Use lists for the number of passengers.
 2. Use classes and objects for tickets. Single and Double tickets could be created from a class."""
+
+
 def ticket1(ticket):
-    print("\n"*30)
+    print("\n" * 30)
     print("---------------------------------------------------------")
     print("\n")
     print("\t\tTransport System")
     print("\n")
     print("---------------------------------------------------------")
     print("\n")
-    print("\tThis is a," ,ticket," ticket.")
+    print("\tThis is a,", ticket, " ticket.")
     print("\tPlease show this to your driver")
-    print("\tThis is a", ticket," ticket to NPS HSR")
+    print("\tThis is a", ticket, " ticket to NPS HSR")
     print("\n")
     print("---------------------------------------------------------")
 
-credits  = 0
+
+credits = 0
 ticket = []
 for i in range(20):
     credits = credits + 1
-print("\n"*30)
+print("\n" * 30)
 
-while(True):
+while (True):
     print("""Transportation menu
     1.Top up credits
     2.Buy loose credits
@@ -90,78 +92,77 @@ while(True):
     T.Show Tickets
     E.Exit""")
 
-    
-  
     try:
         opt = input("Enter your option:")
     except ValueError:
         print("Please enter a valid opt")
-    
-    if(opt == "1"):
-        if(credits == 30):
+
+    if (opt == "1"):
+        if (credits == 30):
             input("You cannot enter any more credits.Press any key to continue:")
-            print("\n"*30)
-        else:    
-            print("You have ",credits," credits and can add ",30 - credits,"more. Would you like to do so?(y/n)")
-            while(True):
+            print("\n" * 30)
+        else:
+            print("You have ", credits, " credits and can add ", 30 - credits, "more. Would you like to do so?(y/n)")
+            while (True):
                 try:
                     opt1 = input()
                 except ValueError:
                     print("Please enter a valid opt")
-                if(opt1 == "y"):
+                if (opt1 == "y"):
                     for i in range(30 - credits):
                         credits = credits + 1
-                    print("You have ",credits," credits")
+                    print("You have ", credits, " credits")
                     input("Press any key to continue")
-                    print("\n"*30)
+                    print("\n" * 30)
                     break
-                elif(opt1 == "n"):
-                    
-                    print("\n"*30)
+                elif (opt1 == "n"):
+
+                    print("\n" * 30)
                     break
                 else:
                     print("Please enter a valid opt")
-            
-            
-    elif(opt == "2"):
-        if(credits == 30):
+
+
+    elif (opt == "2"):
+        if (credits == 30):
             input("You cannot enter any more credits.Press any key to continue:")
-            print("\n"*30)
+            print("\n" * 30)
         else:
-            while(True):
-                print("You can buy a maximum of ", 30-credits," credts. How much would you like to add?(By the way, if you add negetive credits, you lose credits and that's your problem)")
+            while (True):
+                print("You can buy a maximum of ", 30 - credits,
+                      " credts. How much would you like to add?(By the way, if you add negetive credits, you lose credits and that's your problem)")
                 try:
                     cre = int(input())
                 except ValueError:
                     print("Please enter a valid integer:")
-                if(cre <= 30-credits):
-                    input("This transaction is going to cost you "+str(cre*5)+"Rs. Press any key to continue")
-                    print("\n"*30)
+                if (cre <= 30 - credits):
+                    input("This transaction is going to cost you " + str(cre * 5) + "Rs. Press any key to continue")
+                    print("\n" * 30)
                     break
                 else:
                     print("Please enter a valid addition of credits")
             credits = credits + cre
-    elif(opt == "3"):
+    elif (opt == "3"):
         print("(i)Single")
         print("(ii)Return")
         print("(iii)Go back")
-        while(True):
+        while (True):
             try:
                 opt = input("Enter your option:")
             except ValueError:
                 print("Please enter a valid opt")
-            if(opt.upper() == "I"):
-                if(credits < 3 ):
+            if (opt.upper() == "I"):
+                if (credits < 3):
                     input("You cannot buy this ticket. Press any key to continue:")
                 input("This ticket will cost 3 credits which is 15 Rs.Press any key to continue")
                 ticket1("single")
                 ticket.append("single")
-                credits = credits - 3 
+                credits = credits - 3
                 input("Press any key to continue")
                 break
-                print("\n"*30)
-            if(opt.upper() == "II"):
-                if(credits < 5 ):
+                print("\n" * 30)
+            if (opt.upper() == "II"):
+                if (credits < 5):
                     input("You cannot buy this ticket. Press any key to continue:")
                 input("This ticket will cost 5 credits which is 25 Rs.Press any key to continue")
                 ticket1("return")
@@ -169,41 +170,32 @@ while(True):
                 credits = credits - 5
                 input("Press any key to continue")
                 break
-                print("\n"*30)
+                print("\n" * 30)
             if opt.upper() == "III":
                 input("Press any key to continue")
                 break
-                print("\n"*30)
-               
+                print("\n" * 30)
+
             else:
                 print("Please enter a valid opt")
-            
-    elif(opt.capitalize() == "C"):
-        print("You have ",credits," credits")
+
+    elif (opt.capitalize() == "C"):
+        print("You have ", credits, " credits")
         input("Press any key to continue")
-        print("\n"*30)
-    elif(opt.capitalize() == "T"):
+        print("\n" * 30)
+    elif (opt.capitalize() == "T"):
         for i in range(ticket.count("single")):
             ticket1("single")
             print("\n\n")
-            
+
         for i in range(ticket.count("return")):
             ticket1("return")
             print("\n\n")
         input("Press any key to continue")
-        print("\n"*30)
+        print("\n" * 30)
     elif (opt.capitalize() == "E"):
         break
     else:
         print("Please enter a valid no.")
         input("Press any key to continue")
-        print("\n"*30)
-            
-
-            
-        
-
-                      
-        
-        
-            
+        print("\n" * 30)
