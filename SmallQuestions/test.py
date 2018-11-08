@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
 
-x1 = [4.58, 9.48, 14.386]
-y1 = [1.47, 2.45, 4.41]
+x1 = [5.8615, 10.6115, 15.3615]
+y1 = [0.98, 1.96, 2.842]
 slope = (y1[0] - y1[2]) / (x1[0] - x1[2])
 
 
@@ -22,11 +22,11 @@ def plot(x_data, y_data, color):
     plt.plot(xd, line, color=color, label=l)
 
 
-plt.title("$F_k$ vs $F_n$ for Wood + Duct Tape")
-plt.xlabel(r"$F_k$ (N)")
+plt.title("$F_k$ vs $F_n$ for Wood + Wood")
+plt.xlabel("$F_k$ (N)")
 plt.ylabel("$F_n$ (N)")
 plt.scatter(x1, y1, color="y")
 plot(x1, y1, color="y")
 plt.legend(loc="upper left")
-plt.savefig("./Graphs/force_1.png")
+plt.savefig("./force_1.png")
 plt.show()

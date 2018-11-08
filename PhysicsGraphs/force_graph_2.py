@@ -22,9 +22,9 @@ def plot(x_data, y_data, color):
     plt.plot(xd, line, color=color, label=l)
 
 
-plt.title("Acceleration vs Accelerating Force")
-plt.xlabel(r"Acceleration $(\frac{m}{s^2})$")
-plt.ylabel("Accelerating Force (N)")
+plt.title("$F_k$ vs $F_n$ for Wood + Wood")
+plt.xlabel(r"$F_k$ (N)")
+plt.ylabel("$F_n$ (N)")
 plt.scatter(x1, y1, color="g")
 plot(x1, y1, color="g")
 plt.legend(loc="upper left")
