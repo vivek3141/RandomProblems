@@ -1,0 +1,1 @@
+print(f"Probability: {sum([1 if (lambda a:lambda c, num:a(a, c, num))(lambda s, c, num: c if num==7 else s(s, (B - c) * random.random() + c, num + 1))(A, 0) >= C else 0 for i in range(MAXN)]) / MAXN}")
